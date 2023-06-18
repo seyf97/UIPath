@@ -1,0 +1,147 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="829.6,1151.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="34">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="552,1086.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="RawString" />
+      <Variable x:TypeArguments="s:String[]" Name="FilePaths" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="510.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[FilePaths]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(Environment.CurrentDirectory +"\Invoices")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510.4,893.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[FilePaths]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="file" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,768.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Invoice-722018.pdf - Adobe Acrobat Reader DC (64-bit)" sap:VirtualizedContainerService.HintSize="433.6,676" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="9c1598aa-e458-4af0-a0de-abbdb2a072c3" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,384.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="TestString" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'Date: 0000-00-00'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="9c1598aa-e458-4af0-a0de-abbdb2a072c3" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="553, 211, 511, 25" ElementType="Text" FriendlyName="'Invoice No.'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Invoice No.* ' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="736064a8-dbc7-4feb-979d-de17d079e13d" ImageBase64="" InformativeScreenshot="1355f42c747426c99fb4118b834dd723.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='Invoice-722018.pdf - Adobe Acrobat Reader DC (64-bit)' /&gt;" SearchSteps="Selector, FuzzySelector" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="553, 236, 187, 35" ElementType="Text" FriendlyName="'Date: 0000-00-00'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Date: *   Vendor: *   ' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Date: *   Vendor: *   ' role='text' automationid='' check:text='Date:&amp;#xD;&amp;#xA;Vendor:' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[TestString]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[TestString]" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1048" Arguments="[file]" FilePath="C:\Program Files\Adobe\Acrobat DC\Acrobat\acrobat.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUJSURBVFhH5Zh/TFZVGMdBSyxTjPghFeW0cpq0LF1SEZUx0kLWgpptTocmIAjjh0grxtogGDCGMn4M3pZikRosm9WIaghhq/FD1GACawVCvCAMkHvvOZf3fb90zkXbet/zmuC92dYfnz/u7nOf57NzzznPuddlenraBYADNpvNMET1nCEWtFpdrUcqNqlLXE4zphjQgVFGvrWixM9msTjWdIJQ0FJ6aCNLZlaXe4C8FgJlbySUuN1zJ2qHjQT4U+rlJrO8JktRwTL7ms4QCrIk36o+d0LZHweppwvSlSuQJGnujI3ZpKYGVXkvZYouv0dl+Y9b3n/nhiSdCVK6fhWks63ignPFbIaSlgDVY75F9VxwypKR9o+SzgRBN20UF9EBJf5tUHdXC6tTbTmY522zWh0crnFLBDnK/n2g3nfwBfih1VSyki1MBw/OLROU+i+B7NkO6rWQz8mTbCR97D04+giOjUE+8QnIvl2Q674Sx9gzOQmp4wKUiFegurvybajA3oOjjyBb6SRiM8jLgSCvviCOEcEk5eNHoT68jAtK9h4cXQTl72pBt4VB/uwYVL+lUE5/L4wTcqkP9Nl12mZu78HRZwR/qAd9nY1g3C6o9y2GUv2pOM4JvJaxgmzC07CXQFf7gXcfeZb7p/GCDCXjANjmC7phNaTRUWGMM/4dQbavqR63gW4JEt6/HsYL9lwEDX6adYd5oA96QPmGbTWz6N/GCjIRudIEdYUXSOA6ELaaaTB7trEe0sVOSBfOQfrlPKS+XqfSxgr2/s6OU9uhLp0HEr8HSnoqVN9FIGxEyY43QHa/BRK5DQrrGnLNMUiXhx1yGCfIR++LatCHfLQCfBXTzc9pwiT0RdCV3iAxOyEfOwoa+ARo0JPCFW6M4Pl2KDvfBPVzh+q1AEpyrNa6tFc5ZIb0268g2Rmga5g0e/3U0w00JBAyj7HLpa/gyGUoB/NAVt0L8tSjWh8lEVtm5psonlPPOstPP0Ia/EN4Xz/B8XHIZUUzPTc/C+SZx0EfWwH5y5OOsbNAN0F5aAgkKRYkLBiEzSey5gHIR0yauH3sbNB1BKWvT4EkREFhohLf7yYmHONmiX6CHC7E5qE0OsKOSzf5MXUVfQUN4P8pWFFRgZycHFRWVqK7uxs1NTXadXl5OVpaWtDb2wuTyYTs7GwUFhaip6dHmIdjiGBISAgKCgqQlpaG/Px8REZGIikpCSUlJYiKikJVVRW2bt2qyR0+fFgTFuXhGCIYHByMhoYG1NbWIi4uDuHh4SgtLcXg4CBSU1ORmJiI0NBQ9PX1YYItrEn+kSTIwzFMMCsrCykpKcjLy9NGsKysDMPDw0hPT0dsbKwmGBQUhIiICPT39wvzcAwT5FLFxcXo6upCTEwMioqK0N7ejujoaGRmZmqCTU1N6OjoEOa4hmGCjY2Nf13Hx8drI5WcnIzc3FzU1dUhLCwMAwMDf3tOhCGCzc3NMJvZqeXqdWdnJ86cOYPW1lZNamRkBG1tbRi/gTY4N8HnN8x0DEFCXenpBg3wn7XgKH3EF/LHH0EaYJP7Zv8PiuA52blR/vwEVP65usRl3N6D40wwlp3zptS1y0H2RkIuLoRcUaIvpQehHEgACVgL9e75/C/Xu/YeHKGgpezQQtXL7QN6/5JhPvSG4nuXWfW8PZ/VdLf34AgF+b86a1vzIuu5s/7Wlp/XG0p721pWa/F1/w/+d5l2+ROBiPgPwy36dgAAAABJRU5ErkJggg==" InformativeScreenshot="ac81b02362885274281312527ce9d988.png" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='Invoice-722018.pdf - Adobe Acrobat Reader DC (64-bit)' /&gt;" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
